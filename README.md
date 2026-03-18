@@ -31,10 +31,6 @@ Mặc định:
 - `PATCH /api/subscriptions/{id}/use`
 - `GET /api/subscriptions/{id}`
 
-## Ghi chú
-- Lịch học có kiểm tra sĩ số, trùng lịch, subscription còn hiệu lực và đủ buổi.
-- Hủy lịch trước 24h sẽ hoàn lại 1 buổi vào gói.
-
 ## Chạy local (không Docker)
 ### Backend
 ```bash
