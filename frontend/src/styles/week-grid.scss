@@ -1,0 +1,85 @@
+@use './variables' as *;
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: $spacing-xs;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-weight: 600;
+  color: $muted;
+}
+
+.calendar-cell {
+  min-height: 120px;
+  background: $secondary;
+  border-radius: $radius-sm;
+  padding: $spacing-xs;
+  border: 1px solid $border;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.calendar-cell.is-muted {
+  opacity: 0.4;
+}
+
+.calendar-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $muted;
+}
+
+.calendar-classes {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.calendar-class {
+  background: $surface;
+  border-radius: $radius-xs;
+  padding: $spacing-xs;
+  border: 1px solid $border;
+}
+
+.calendar-class-time {
+  font-size: 0.75rem;
+  color: $muted;
+}
+
+.calendar-class-name {
+  font-weight: 600;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid $border;
+}
+
+.table-actions {
+  display: inline-flex;
+  gap: $spacing-xs;
+}

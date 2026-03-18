@@ -1,0 +1,18 @@
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container form button {
+  margin-top: 8px;
+}
+
+.helper strong {
+  color: var(--text);
+}
+
+.status {
+  text-align: center;
+  font-weight: 600;
+}

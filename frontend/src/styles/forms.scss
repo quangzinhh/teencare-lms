@@ -1,0 +1,36 @@
+@use './variables' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input,
+select {
+  border: 1px solid $border;
+  border-radius: $radius-xs;
+  padding: 10px 12px;
+  font-size: 14px;
+  background: $surface;
+}
+
+button {
+  border: none;
+  border-radius: $radius-xs;
+  padding: 10px 14px;
+  background: $primary;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: $primary-dark;
+}
