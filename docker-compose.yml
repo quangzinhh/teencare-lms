@@ -20,7 +20,7 @@ services:
       DB_USER: postgres
       DB_PASSWORD: 123456
       DB_NAME: teencare
-      CORS_ORIGIN: http://localhost:5173
+      CORS_ORIGIN: http://localhost:5173,http://180.93.42.28:5173
     ports:
       - '3000:3000'
     depends_on:
